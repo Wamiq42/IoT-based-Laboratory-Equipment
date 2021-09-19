@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_home_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:src="@drawable/diopus_logo" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:padding="10dp"
+        android:text="Connect to Bluetooth"
+        android:textSize="20dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="20dp"
+        android:id="@+id/bluetoothAnim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/blutooth"
+        app:lottie_autoPlay="true"
+        android:visibility="invisible"
+        app:lottie_loop="true"/>
+
+
+</LinearLayout>

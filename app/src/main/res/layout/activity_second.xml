@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/doodle70"
+        android:gravity="center"
+        android:text="00:00"
+        android:fontFamily=""
+        android:textColor="@color/white"
+        android:textSize="76dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/second_bg"
+        >
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_one"
+                android:layout_width="170dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardBackgroundColor="@color/secondary_color"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_weight="1"
+                            android:id="@+id/tick_one"
+                            android:layout_gravity="center"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_baseline_check_circle_24"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preset"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:paddingTop="50sp"
+                        android:textSize="30dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select 10 Sec"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:paddingTop="10sp"
+                        android:textSize="18dp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_two"
+                android:layout_width="170dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardBackgroundColor="@color/secondary_color"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/tick_two"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_baseline_check_circle_24" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="50sp"
+                        android:text="Preset"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="10sp"
+                        android:text="Select 5 Minutes"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_weight="1"
+
+                android:layout_margin="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_dc_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_dc_outline"
+            android:text="Disconnect Bluetooth"
+            android:textColor="@color/secondary_color"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+</LinearLayout>
